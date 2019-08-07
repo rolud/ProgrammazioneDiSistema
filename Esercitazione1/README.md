@@ -15,7 +15,7 @@ indica la dimensione totale del buffer, il secondo quanti caratteri sono attualm
 + **void insert (const StringBuffer& sb , size_t pos )** – inserisce il contenuto di sb nella posizione pos del buffer; o se pos è maggiore di size (), inserisce spazi tra size () e pos, riallocando il buffer se necessario
 + **void append (const char\* str )** – aggiunge i caratteri contenuti in str in coda a quelli memorizzati nel buffer, riallocando il buffer se necessario;
 + **void append (const StringBuffer& sb )** – aggiunge i caratteri contenuti nell’oggetto sb in coda a quelli memorizzati nel buffer, riallocando il buffer se necessario;
-+ **cost char* c_str ()** – restituisce un puntatore in sola lettura al buffer interno opportunamente terminato con un "\0";
++ **cost char\* c_str ()** – restituisce un puntatore in sola lettura al buffer interno opportunamente terminato con un "\0";
 + **void set (const char\* str )** – sostituisce la stringa memorizzata nel buffer con il contenuto dell’array s , riallocando il buffer se necessario;
 + **void set (const StringBuffer& s )** – sostituisce la stringa memorizzata nel buffer con il contenuto dell’oggetto s, riallocando il buffer se necessario.
 
@@ -37,7 +37,7 @@ s1.append("\n");
 printf("%zu",s1.size()); //124
 s2.clear();
 for (int i=0; i<10; i++)
-s2.insert(s1,0);
+	s2.insert(s1,0);
 printf(s2.c_str()); //Lorem ipsum ... 10 volte
 printf("%zu",s2.size()); //1240
 ```
