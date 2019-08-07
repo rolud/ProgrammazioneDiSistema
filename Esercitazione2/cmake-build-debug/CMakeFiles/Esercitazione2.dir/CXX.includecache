@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Workspace/CLionProjects/pds/Esercitazione2/Base.h
+string
+-
+
+D:/Workspace/CLionProjects/pds/Esercitazione2/Directory.h
+list
+-
+string
+-
+memory
+-
+Base.h
+D:/Workspace/CLionProjects/pds/Esercitazione2/Base.h
+File.h
+D:/Workspace/CLionProjects/pds/Esercitazione2/File.h
+
+D:/Workspace/CLionProjects/pds/Esercitazione2/File.h
+Base.h
+D:/Workspace/CLionProjects/pds/Esercitazione2/Base.h
+
+D:/Workspace/CLionProjects/pds/Esercitazione2/main.cpp
+iostream
+-
+Directory.h
+D:/Workspace/CLionProjects/pds/Esercitazione2/Directory.h
+
