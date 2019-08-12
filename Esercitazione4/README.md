@@ -24,7 +24,7 @@ Si faccia ad evitare forme di busy-loop, ovvero, ad eseguire cicli che consumano
 #### Esempio di uso
 ```c++
 int main() {
-	Scheduler p{}; // RR, quanto di tempo = 3000, poolsize = 8
+	JobScheduler p{}; // RR, quanto di tempo = 3000, poolsize = 8
 	p.submit( Job ( 1 , 0 , 15000 )); // Job(int id, int start_time, int duration)
 	p.submit( Job ( 2 , 0 , 6000 ));
 	p.submit( Job ( 3 , 1000 , 9000 ));

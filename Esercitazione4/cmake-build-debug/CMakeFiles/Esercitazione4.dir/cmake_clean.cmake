@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Esercitazione4.dir/main.cpp.obj"
+  "CMakeFiles/Esercitazione4.dir/JobScheduler.cpp.obj"
+  "CMakeFiles/Esercitazione4.dir/Job.cpp.obj"
   "Esercitazione4.pdb"
   "Esercitazione4.exe"
   "Esercitazione4.exe.manifest"

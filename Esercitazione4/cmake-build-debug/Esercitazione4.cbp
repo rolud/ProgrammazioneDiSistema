@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione4/Job.cpp">
+			<Option target="Esercitazione4"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione4/Job.h">
+			<Option target="Esercitazione4"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione4/JobScheduler.cpp">
+			<Option target="Esercitazione4"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione4/JobScheduler.h">
+			<Option target="Esercitazione4"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione4/main.cpp">
 			<Option target="Esercitazione4"/>
 		</Unit>

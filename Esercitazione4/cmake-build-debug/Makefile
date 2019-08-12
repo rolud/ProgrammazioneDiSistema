@@ -122,6 +122,60 @@ Esercitazione4/fast:
 	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/build
 .PHONY : Esercitazione4/fast
 
+Job.obj: Job.cpp.obj
+
+.PHONY : Job.obj
+
+# target to build an object file
+Job.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/Job.cpp.obj
+.PHONY : Job.cpp.obj
+
+Job.i: Job.cpp.i
+
+.PHONY : Job.i
+
+# target to preprocess a source file
+Job.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/Job.cpp.i
+.PHONY : Job.cpp.i
+
+Job.s: Job.cpp.s
+
+.PHONY : Job.s
+
+# target to generate assembly for a file
+Job.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/Job.cpp.s
+.PHONY : Job.cpp.s
+
+JobScheduler.obj: JobScheduler.cpp.obj
+
+.PHONY : JobScheduler.obj
+
+# target to build an object file
+JobScheduler.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/JobScheduler.cpp.obj
+.PHONY : JobScheduler.cpp.obj
+
+JobScheduler.i: JobScheduler.cpp.i
+
+.PHONY : JobScheduler.i
+
+# target to preprocess a source file
+JobScheduler.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/JobScheduler.cpp.i
+.PHONY : JobScheduler.cpp.i
+
+JobScheduler.s: JobScheduler.cpp.s
+
+.PHONY : JobScheduler.s
+
+# target to generate assembly for a file
+JobScheduler.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione4.dir\build.make CMakeFiles/Esercitazione4.dir/JobScheduler.cpp.s
+.PHONY : JobScheduler.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +212,12 @@ help:
 	@echo ... Esercitazione4
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Job.obj
+	@echo ... Job.i
+	@echo ... Job.s
+	@echo ... JobScheduler.obj
+	@echo ... JobScheduler.i
+	@echo ... JobScheduler.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Workspace/CLionProjects/pds/Esercitazione4/Job.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione4/cmake-build-debug/CMakeFiles/Esercitazione4.dir/Job.cpp.obj"
+  "D:/Workspace/CLionProjects/pds/Esercitazione4/JobScheduler.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione4/cmake-build-debug/CMakeFiles/Esercitazione4.dir/JobScheduler.cpp.obj"
   "D:/Workspace/CLionProjects/pds/Esercitazione4/main.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione4/cmake-build-debug/CMakeFiles/Esercitazione4.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
