@@ -2,7 +2,7 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Esercitazione3" targetName="Esercitazione3" />
+      <config projectName="Esercitazione4" targetName="Esercitazione4" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -11,7 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66128331-acde-4895-bac0-f44e30e409ab" name="Default Changelist" comment="" />
+    <list default="true" id="e4b91998-14e1-4ab2-8f4f-a8c92c5ddfdf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercitazione3/.idea/Esercitazione3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercitazione3/.idea/Esercitazione3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercitazione3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercitazione3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Esercitazione3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Esercitazione3/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,8 +43,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1222" />
-    <option name="y" value="79" />
+    <option name="x" value="-1288" />
+    <option name="y" value="-8" />
     <option name="width" value="780" />
     <option name="height" value="839" />
   </component>
@@ -49,18 +54,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Esercitazione3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Esercitazione3" type="462c0819:PsiDirectoryNode" />
+              <item name="Esercitazione4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Esercitazione4" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -81,7 +86,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Esercitazione3" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Esercitazione3" TARGET_NAME="Esercitazione3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Esercitazione3" RUN_TARGET_NAME="Esercitazione3">
+    <configuration name="Esercitazione4" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Esercitazione4" TARGET_NAME="Esercitazione4" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Esercitazione4" RUN_TARGET_NAME="Esercitazione4">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -92,23 +97,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="66128331-acde-4895-bac0-f44e30e409ab" name="Default Changelist" comment="" />
-      <created>1565629520475</created>
+      <changelist id="e4b91998-14e1-4ab2-8f4f-a8c92c5ddfdf" name="Default Changelist" comment="" />
+      <created>1565630366367</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1565629520475</updated>
-      <workItem from="1565629529800" duration="643000" />
+      <updated>1565630366367</updated>
+      <workItem from="1565630369035" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="643000" />
+    <option name="totallyTimeSpent" value="611000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1288" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14563107" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="CMake" />
       <window_info anchor="bottom" id="Database Changes" />
