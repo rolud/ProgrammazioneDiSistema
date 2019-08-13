@@ -32,7 +32,7 @@ int Job::getExecution_time() const {
 }
 
 void Job::setExecution_time(int execution_time) {
-    Job::execution_time = execution_time;
+    Job::execution_time += execution_time;
 }
 
 int Job::getStart_time() const {
@@ -40,7 +40,7 @@ int Job::getStart_time() const {
 }
 
 void Job::setStart_time(int start_time) {
-    Job::start_time = start_time;
+    Job::start_time + start_time;
 }
 
 int Job::getWait_time() const {
@@ -48,7 +48,7 @@ int Job::getWait_time() const {
 }
 
 void Job::setWait_time(int wait_time) {
-    Job::wait_time = wait_time;
+    Job::wait_time += wait_time;
 }
 
 int Job::getCompletation_time() const {

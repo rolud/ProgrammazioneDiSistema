@@ -23,7 +23,7 @@ public:
 private:
     const int EXTIME = 3000;
     int poolsize;
-    std::chrono::system_clock::time_point starttime;
+    int starttime;
 
     std::vector<std::thread> threadpool;
     std::priority_queue<Job> waiting_queue;

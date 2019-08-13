@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/Workspace/CLionProjects/pds/Esercitazione4/Job.cpp
-Job.h
-D:/Workspace/CLionProjects/pds/Esercitazione4/Job.h
-
 D:/Workspace/CLionProjects/pds/Esercitazione4/Job.h
 
 D:/Workspace/CLionProjects/pds/Esercitazione4/JobScheduler.cpp
@@ -31,10 +27,4 @@ condition_variable
 -
 Job.h
 D:/Workspace/CLionProjects/pds/Esercitazione4/Job.h
-
-D:/Workspace/CLionProjects/pds/Esercitazione4/main.cpp
-iostream
--
-JobScheduler.h
-D:/Workspace/CLionProjects/pds/Esercitazione4/JobScheduler.h
 
