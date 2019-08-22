@@ -59,6 +59,14 @@ void Job::setCompletation_time(int completation_time) {
     Job::completation_time = completation_time;
 }
 
+int Job::getLast_wait() const {
+    return last_wait;
+}
+
+void Job::setLast_wait(int last_wait) {
+    Job::last_wait = last_wait;
+}
+
 // if start time is lower then priority is higher
 bool Job::operator<(const Job &j) const {
     return this->start_time > j.start_time;

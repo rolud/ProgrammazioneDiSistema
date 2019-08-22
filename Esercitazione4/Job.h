@@ -26,6 +26,10 @@ public:
     bool operator > (const Job& j) const;
     bool operator < (const Job& j) const;
 
+    int getLast_wait() const;
+
+    void setLast_wait(int last_wait);
+
 private:
     int id;                // identificativo univoco
     int duration;          // durata del compito da svolgere in ms
@@ -33,6 +37,8 @@ private:
     int start_time;        // istante in cui far partire l'attività
     int wait_time;         // tempo totale di attesa (somma di tutte le attese)
     int completation_time; // istante di tempo in cui il gestore ha terminato l'attività
+
+    int last_wait;
 
 };
 
