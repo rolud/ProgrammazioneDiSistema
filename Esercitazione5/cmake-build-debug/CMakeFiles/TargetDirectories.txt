@@ -1,0 +1,4 @@
+D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir
+D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5_autogen.dir

@@ -1,0 +1,35 @@
+# Meta
+set(AM_MULTI_CONFIG "FALSE")
+set(AM_PARALLEL "4")
+set(AM_VERBOSITY "")
+# Directories
+set(AM_CMAKE_SOURCE_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5")
+set(AM_CMAKE_BINARY_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug")
+set(AM_CMAKE_CURRENT_SOURCE_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5")
+set(AM_CMAKE_CURRENT_BINARY_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug")
+set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
+set(AM_BUILD_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/Esercitazione5_autogen")
+set(AM_INCLUDE_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/Esercitazione5_autogen/include")
+# Files
+set(AM_SOURCES "D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.cpp;D:/Workspace/CLionProjects/pds/Esercitazione5/main.cpp")
+set(AM_HEADERS "D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.h")
+set(AM_SETTINGS_FILE "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5_autogen.dir/AutogenOldSettings.txt")
+# Qt
+set(AM_QT_VERSION_MAJOR 5)
+set(AM_QT_MOC_EXECUTABLE "D:/Qt/5.12.3/mingw73_64/bin/moc.exe")
+set(AM_QT_UIC_EXECUTABLE "D:/Qt/5.12.3/mingw73_64/bin/uic.exe")
+# MOC settings
+set(AM_MOC_SKIP "")
+set(AM_MOC_DEFINITIONS "QT_CHARTS_LIB;QT_CORE_LIB;QT_GUI_LIB;QT_WIDGETS_LIB")
+set(AM_MOC_INCLUDES "D:/Qt/5.12.3/mingw73_64/include;D:/Qt/5.12.3/mingw73_64/include/QtCore;D:/Qt/5.12.3/mingw73_64/./mkspecs/win32-g++;D:/Qt/5.12.3/mingw73_64/include/QtGui;D:/Qt/5.12.3/mingw73_64/include/QtANGLE;D:/Qt/5.12.3/mingw73_64/include/QtWidgets;D:/Qt/5.12.3/mingw73_64/include/QtCharts")
+set(AM_MOC_OPTIONS "")
+set(AM_MOC_RELAXED_MODE "")
+set(AM_MOC_MACRO_NAMES "Q_OBJECT;Q_GADGET;Q_NAMESPACE")
+set(AM_MOC_DEPEND_FILTERS "")
+set(AM_MOC_PREDEFS_CMD "D:/Qt/Tools/mingw730_64/bin/g++.exe;-dM;-E;-c;D:/Windows/Programmi/JetBrains/CLion 2018.3.4/bin/cmake/win/share/cmake-3.13/Modules/CMakeCXXCompilerABI.cpp")
+# UIC settings
+set(AM_UIC_SKIP "")
+set(AM_UIC_TARGET_OPTIONS "")
+set(AM_UIC_OPTIONS_FILES "")
+set(AM_UIC_OPTIONS_OPTIONS "")
+set(AM_UIC_SEARCH_PATHS "")
