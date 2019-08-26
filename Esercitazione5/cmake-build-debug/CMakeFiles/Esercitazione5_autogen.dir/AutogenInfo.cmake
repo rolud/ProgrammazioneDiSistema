@@ -11,8 +11,8 @@ set(AM_CMAKE_INCLUDE_DIRECTORIES_PROJECT_BEFORE "")
 set(AM_BUILD_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/Esercitazione5_autogen")
 set(AM_INCLUDE_DIR "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/Esercitazione5_autogen/include")
 # Files
-set(AM_SOURCES "D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.cpp;D:/Workspace/CLionProjects/pds/Esercitazione5/main.cpp")
-set(AM_HEADERS "D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.h")
+set(AM_SOURCES "D:/Workspace/CLionProjects/pds/Esercitazione5/DirEntry.cpp;D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.cpp;D:/Workspace/CLionProjects/pds/Esercitazione5/FileSystemModel.cpp;D:/Workspace/CLionProjects/pds/Esercitazione5/SearchBar.cpp;D:/Workspace/CLionProjects/pds/Esercitazione5/main.cpp")
+set(AM_HEADERS "D:/Workspace/CLionProjects/pds/Esercitazione5/DirEntry.h;D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.h;D:/Workspace/CLionProjects/pds/Esercitazione5/FileSystemModel.h;D:/Workspace/CLionProjects/pds/Esercitazione5/SearchBar.h")
 set(AM_SETTINGS_FILE "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5_autogen.dir/AutogenOldSettings.txt")
 # Qt
 set(AM_QT_VERSION_MAJOR 5)

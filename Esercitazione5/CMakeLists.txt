@@ -18,5 +18,5 @@ list(APPEND LIBRARIES
         Qt5::Charts)
 list(REMOVE_DUPLICATES LIBRARIES)
 
-add_executable(Esercitazione5 main.cpp DiskStatusBar.cpp DiskStatusBar.h)
+add_executable(Esercitazione5 main.cpp DiskStatusBar.cpp DiskStatusBar.h SearchBar.cpp SearchBar.h FileSystemModel.cpp FileSystemModel.h DirEntry.cpp DirEntry.h)
 target_link_libraries(Esercitazione5 ${LIBRARIES})

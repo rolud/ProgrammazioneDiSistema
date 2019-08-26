@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Workspace/CLionProjects/pds/Esercitazione5/DirEntry.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir/DirEntry.cpp.obj"
   "D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir/DiskStatusBar.cpp.obj"
   "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/Esercitazione5_autogen/mocs_compilation.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj"
+  "D:/Workspace/CLionProjects/pds/Esercitazione5/FileSystemModel.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.obj"
+  "D:/Workspace/CLionProjects/pds/Esercitazione5/SearchBar.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir/SearchBar.cpp.obj"
   "D:/Workspace/CLionProjects/pds/Esercitazione5/main.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/CMakeFiles/Esercitazione5.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

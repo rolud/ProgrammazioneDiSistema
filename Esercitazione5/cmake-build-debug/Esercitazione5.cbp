@@ -114,10 +114,28 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DirEntry.cpp">
+			<Option target="Esercitazione5"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DirEntry.h">
+			<Option target="Esercitazione5"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.cpp">
 			<Option target="Esercitazione5"/>
 		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.h">
+			<Option target="Esercitazione5"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/FileSystemModel.cpp">
+			<Option target="Esercitazione5"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/FileSystemModel.h">
+			<Option target="Esercitazione5"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/SearchBar.cpp">
+			<Option target="Esercitazione5"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/SearchBar.h">
 			<Option target="Esercitazione5"/>
 		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/cmake-build-debug/Esercitazione5_autogen/mocs_compilation.cpp">

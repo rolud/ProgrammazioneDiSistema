@@ -135,6 +135,33 @@ Esercitazione5_autogen/fast:
 	$(MAKE) -f CMakeFiles\Esercitazione5_autogen.dir\build.make CMakeFiles/Esercitazione5_autogen.dir/build
 .PHONY : Esercitazione5_autogen/fast
 
+DirEntry.obj: DirEntry.cpp.obj
+
+.PHONY : DirEntry.obj
+
+# target to build an object file
+DirEntry.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirEntry.cpp.obj
+.PHONY : DirEntry.cpp.obj
+
+DirEntry.i: DirEntry.cpp.i
+
+.PHONY : DirEntry.i
+
+# target to preprocess a source file
+DirEntry.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirEntry.cpp.i
+.PHONY : DirEntry.cpp.i
+
+DirEntry.s: DirEntry.cpp.s
+
+.PHONY : DirEntry.s
+
+# target to generate assembly for a file
+DirEntry.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirEntry.cpp.s
+.PHONY : DirEntry.cpp.s
+
 DiskStatusBar.obj: DiskStatusBar.cpp.obj
 
 .PHONY : DiskStatusBar.obj
@@ -189,6 +216,60 @@ Esercitazione5_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.s
 .PHONY : Esercitazione5_autogen/mocs_compilation.cpp.s
 
+FileSystemModel.obj: FileSystemModel.cpp.obj
+
+.PHONY : FileSystemModel.obj
+
+# target to build an object file
+FileSystemModel.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.obj
+.PHONY : FileSystemModel.cpp.obj
+
+FileSystemModel.i: FileSystemModel.cpp.i
+
+.PHONY : FileSystemModel.i
+
+# target to preprocess a source file
+FileSystemModel.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.i
+.PHONY : FileSystemModel.cpp.i
+
+FileSystemModel.s: FileSystemModel.cpp.s
+
+.PHONY : FileSystemModel.s
+
+# target to generate assembly for a file
+FileSystemModel.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.s
+.PHONY : FileSystemModel.cpp.s
+
+SearchBar.obj: SearchBar.cpp.obj
+
+.PHONY : SearchBar.obj
+
+# target to build an object file
+SearchBar.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/SearchBar.cpp.obj
+.PHONY : SearchBar.cpp.obj
+
+SearchBar.i: SearchBar.cpp.i
+
+.PHONY : SearchBar.i
+
+# target to preprocess a source file
+SearchBar.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/SearchBar.cpp.i
+.PHONY : SearchBar.cpp.i
+
+SearchBar.s: SearchBar.cpp.s
+
+.PHONY : SearchBar.s
+
+# target to generate assembly for a file
+SearchBar.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/SearchBar.cpp.s
+.PHONY : SearchBar.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -226,12 +307,21 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Esercitazione5_autogen
+	@echo ... DirEntry.obj
+	@echo ... DirEntry.i
+	@echo ... DirEntry.s
 	@echo ... DiskStatusBar.obj
 	@echo ... DiskStatusBar.i
 	@echo ... DiskStatusBar.s
 	@echo ... Esercitazione5_autogen/mocs_compilation.obj
 	@echo ... Esercitazione5_autogen/mocs_compilation.i
 	@echo ... Esercitazione5_autogen/mocs_compilation.s
+	@echo ... FileSystemModel.obj
+	@echo ... FileSystemModel.i
+	@echo ... FileSystemModel.s
+	@echo ... SearchBar.obj
+	@echo ... SearchBar.i
+	@echo ... SearchBar.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

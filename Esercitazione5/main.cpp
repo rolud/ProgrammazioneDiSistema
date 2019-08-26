@@ -9,6 +9,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtCharts>
 #include "DiskStatusBar.h"
+#include "SearchBar.h"
 
 int main(int argc, char** argv) {
     QApplication app(argc, argv);
@@ -19,9 +20,11 @@ int main(int argc, char** argv) {
     mainWindow.setCentralWidget(mainWidget);
     mainWidget->setLayout(mainLayout);
 
-    DiskStatusBar *disks = new DiskStatusBar(mainWidget);
+    DiskStatusBar* disks = new DiskStatusBar(mainWidget);
+    SearchBar* searchBar = new SearchBar(mainWidget);
 
     mainLayout->addWidget(disks);
+    mainLayout->addWidget(searchBar);
 
     mainWindow.resize(800, 600);
     mainWindow.show();

@@ -53,10 +53,10 @@ QStringList DiskStatusBar::setDiskInfo() {
     foreach (const QStorageInfo &storage, QStorageInfo::mountedVolumes()) {
         if (storage.isValid() && storage.isReady()) {
             if (!storage.isReadOnly()) {
-                qDebug() << "name:" << storage.name();
-                qDebug() << "fileSystemType:" << storage.fileSystemType();
-                qDebug() << "size:" << storage.bytesTotal()/1000/1000 << "MB";
-                qDebug() << "availableSize:" << storage.bytesAvailable()/1000/1000 << "MB";
+//                qDebug() << "name:" << storage.name();
+//                qDebug() << "fileSystemType:" << storage.fileSystemType();
+//                qDebug() << "size:" << storage.bytesTotal()/1000/1000 << "MB";
+//                qDebug() << "availableSize:" << storage.bytesAvailable()/1000/1000 << "MB";
 
                 long percentuale = storage.bytesAvailable() * 100 / storage.bytesTotal();
                 QString catname = storage.name() + " (" + QString::number(storage.bytesTotal()/1000/1000/1000) + " GB)";
