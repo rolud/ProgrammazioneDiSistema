@@ -126,10 +126,24 @@ CMakeFiles/Esercitazione5.dir/DirEntry.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione5.dir/DirEntry.cpp.s"
 	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione5\DirEntry.cpp -o CMakeFiles\Esercitazione5.dir\DirEntry.cpp.s
 
+CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj: CMakeFiles/Esercitazione5.dir/flags.make
+CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj: CMakeFiles/Esercitazione5.dir/includes_CXX.rsp
+CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj: ../DirectoryPieChart.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Esercitazione5.dir\DirectoryPieChart.cpp.obj -c D:\Workspace\CLionProjects\pds\Esercitazione5\DirectoryPieChart.cpp
+
+CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.i"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\CLionProjects\pds\Esercitazione5\DirectoryPieChart.cpp > CMakeFiles\Esercitazione5.dir\DirectoryPieChart.cpp.i
+
+CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.s"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione5\DirectoryPieChart.cpp -o CMakeFiles\Esercitazione5.dir\DirectoryPieChart.cpp.s
+
 CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj: CMakeFiles/Esercitazione5.dir/flags.make
 CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj: CMakeFiles/Esercitazione5.dir/includes_CXX.rsp
 CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj: Esercitazione5_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj"
 	D:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Esercitazione5.dir\Esercitazione5_autogen\mocs_compilation.cpp.obj -c D:\Workspace\CLionProjects\pds\Esercitazione5\cmake-build-debug\Esercitazione5_autogen\mocs_compilation.cpp
 
 CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.i: cmake_force
@@ -147,6 +161,7 @@ Esercitazione5_OBJECTS = \
 "CMakeFiles/Esercitazione5.dir/SearchBar.cpp.obj" \
 "CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.obj" \
 "CMakeFiles/Esercitazione5.dir/DirEntry.cpp.obj" \
+"CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj" \
 "CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj"
 
 # External object files for target Esercitazione5
@@ -157,6 +172,7 @@ Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/DiskStatusBar.cpp.obj
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/SearchBar.cpp.obj
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.obj
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/DirEntry.cpp.obj
+Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/build.make
 Esercitazione5.exe: D:/Qt/5.12.3/mingw73_64/lib/libQt5Chartsd.a
@@ -166,7 +182,7 @@ Esercitazione5.exe: D:/Qt/5.12.3/mingw73_64/lib/libQt5Cored.a
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/linklibs.rsp
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/objects1.rsp
 Esercitazione5.exe: CMakeFiles/Esercitazione5.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Esercitazione5.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione5\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Esercitazione5.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Esercitazione5.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

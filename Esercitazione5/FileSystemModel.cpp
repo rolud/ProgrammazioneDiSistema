@@ -4,6 +4,7 @@
 
 #include <QtCore/QDir>
 #include <QtCore/QDirIterator>
+#include <iostream>
 
 #include "FileSystemModel.h"
 #include "DirEntry.h"
@@ -28,11 +29,12 @@ std::vector<DirEntry> FileSystemModel::getDirContent() {
     auto *iter = new QDirIterator(path);
 
     while(iter->hasNext()) {
-        DirEntry de(iter->fileInfo());
-        if (de.getName() == "." || de.getName() == "..") {
+        iter->next();
+        if (iter->fileName() == "." || iter->fileName() == "..") {
             continue;
         }
-
+        DirEntry de(iter->fileInfo());
+        std::cout << "File: " << de.getName().toStdString() << " - Size: " << de.getSize() << std::endl;
         this->dirContent.push_back(de);
     }
 
@@ -44,5 +46,6 @@ void FileSystemModel::setPath(QString path) {
     if (this->path == path)
         return;
     this->path = std::move(path);
+    this->dirContent.clear();
     emit pathChanged(this->path);
 }

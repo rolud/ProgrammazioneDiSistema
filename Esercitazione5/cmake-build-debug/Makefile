@@ -162,6 +162,33 @@ DirEntry.cpp.s:
 	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirEntry.cpp.s
 .PHONY : DirEntry.cpp.s
 
+DirectoryPieChart.obj: DirectoryPieChart.cpp.obj
+
+.PHONY : DirectoryPieChart.obj
+
+# target to build an object file
+DirectoryPieChart.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj
+.PHONY : DirectoryPieChart.cpp.obj
+
+DirectoryPieChart.i: DirectoryPieChart.cpp.i
+
+.PHONY : DirectoryPieChart.i
+
+# target to preprocess a source file
+DirectoryPieChart.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.i
+.PHONY : DirectoryPieChart.cpp.i
+
+DirectoryPieChart.s: DirectoryPieChart.cpp.s
+
+.PHONY : DirectoryPieChart.s
+
+# target to generate assembly for a file
+DirectoryPieChart.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione5.dir\build.make CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.s
+.PHONY : DirectoryPieChart.cpp.s
+
 DiskStatusBar.obj: DiskStatusBar.cpp.obj
 
 .PHONY : DiskStatusBar.obj
@@ -310,6 +337,9 @@ help:
 	@echo ... DirEntry.obj
 	@echo ... DirEntry.i
 	@echo ... DirEntry.s
+	@echo ... DirectoryPieChart.obj
+	@echo ... DirectoryPieChart.i
+	@echo ... DirectoryPieChart.s
 	@echo ... DiskStatusBar.obj
 	@echo ... DiskStatusBar.i
 	@echo ... DiskStatusBar.s

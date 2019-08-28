@@ -120,6 +120,12 @@
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DirEntry.h">
 			<Option target="Esercitazione5"/>
 		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DirectoryPieChart.cpp">
+			<Option target="Esercitazione5"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DirectoryPieChart.h">
+			<Option target="Esercitazione5"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione5/DiskStatusBar.cpp">
 			<Option target="Esercitazione5"/>
 		</Unit>

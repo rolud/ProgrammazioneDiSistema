@@ -12,7 +12,7 @@
 
 class DiskStatusBar: public QWidget {
 public:
-    DiskStatusBar(QWidget *parent = 0);
+    DiskStatusBar(QWidget *parent = nullptr);
 private:
     QtCharts::QHorizontalStackedBarSeries *m_series;
     QtCharts::QChartView *m_chartView;

@@ -37,7 +37,8 @@ SearchBar::SearchBar(QWidget *parent) : QWidget(parent) {
 
 void SearchBar::selected(const QString& entry) {
     FileSystemModel::getFileSystemModel()->setPath(entry);
-    // std::cout << "Line Edit -> " << entry.toStdString() << std::endl;
+    FileSystemModel::getFileSystemModel()->getDirContent();
+// std::cout << "Line Edit -> " << entry.toStdString() << std::endl;
 }
 
 void SearchBar::selected() {

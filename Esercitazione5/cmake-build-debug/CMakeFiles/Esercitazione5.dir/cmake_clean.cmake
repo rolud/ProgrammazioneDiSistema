@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Esercitazione5.dir/SearchBar.cpp.obj"
   "CMakeFiles/Esercitazione5.dir/FileSystemModel.cpp.obj"
   "CMakeFiles/Esercitazione5.dir/DirEntry.cpp.obj"
+  "CMakeFiles/Esercitazione5.dir/DirectoryPieChart.cpp.obj"
   "CMakeFiles/Esercitazione5.dir/Esercitazione5_autogen/mocs_compilation.cpp.obj"
   "Esercitazione5.pdb"
   "Esercitazione5.exe"

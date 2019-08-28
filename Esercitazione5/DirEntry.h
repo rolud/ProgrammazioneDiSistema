@@ -15,6 +15,8 @@ public:
     QString getName();
     qint64 getSize();
     bool isDir();
+    static qint64 dirSize(const QString& path);
+
 private:
     QString _name;
     QString _parent;

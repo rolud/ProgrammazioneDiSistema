@@ -10,6 +10,7 @@
 #include <QtCharts>
 #include "DiskStatusBar.h"
 #include "SearchBar.h"
+#include "DirectoryPieChart.h"
 
 int main(int argc, char** argv) {
     QApplication app(argc, argv);
@@ -22,9 +23,11 @@ int main(int argc, char** argv) {
 
     DiskStatusBar* disks = new DiskStatusBar(mainWidget);
     SearchBar* searchBar = new SearchBar(mainWidget);
+    DirectoryPieChart* directoryPieChart = new DirectoryPieChart(mainWidget);
 
     mainLayout->addWidget(disks);
     mainLayout->addWidget(searchBar);
+    mainLayout->addWidget(directoryPieChart);
 
     mainWindow.resize(800, 600);
     mainWindow.show();

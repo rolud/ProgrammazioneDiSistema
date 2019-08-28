@@ -26,10 +26,12 @@ signals:
 
 protected:
     FileSystemModel();
+
 private:
     static FileSystemModel* fsm;
     QString path;
     std::vector<DirEntry> dirContent;
+    qint64 size;
 
 
 
