@@ -69,19 +69,79 @@ CMakeFiles/Esercitazione3.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione3.dir/main.cpp.s"
 	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione3\main.cpp -o CMakeFiles\Esercitazione3.dir\main.cpp.s
 
+CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj: CMakeFiles/Esercitazione3.dir/flags.make
+CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj: ../NetworkServer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Esercitazione3.dir\NetworkServer.cpp.obj -c D:\Workspace\CLionProjects\pds\Esercitazione3\NetworkServer.cpp
+
+CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.i"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\CLionProjects\pds\Esercitazione3\NetworkServer.cpp > CMakeFiles\Esercitazione3.dir\NetworkServer.cpp.i
+
+CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.s"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione3\NetworkServer.cpp -o CMakeFiles\Esercitazione3.dir\NetworkServer.cpp.s
+
+CMakeFiles/Esercitazione3.dir/Message.cpp.obj: CMakeFiles/Esercitazione3.dir/flags.make
+CMakeFiles/Esercitazione3.dir/Message.cpp.obj: ../Message.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Esercitazione3.dir/Message.cpp.obj"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Esercitazione3.dir\Message.cpp.obj -c D:\Workspace\CLionProjects\pds\Esercitazione3\Message.cpp
+
+CMakeFiles/Esercitazione3.dir/Message.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Esercitazione3.dir/Message.cpp.i"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\CLionProjects\pds\Esercitazione3\Message.cpp > CMakeFiles\Esercitazione3.dir\Message.cpp.i
+
+CMakeFiles/Esercitazione3.dir/Message.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione3.dir/Message.cpp.s"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione3\Message.cpp -o CMakeFiles\Esercitazione3.dir\Message.cpp.s
+
+CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj: CMakeFiles/Esercitazione3.dir/flags.make
+CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj: ../Symbol.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Esercitazione3.dir\Symbol.cpp.obj -c D:\Workspace\CLionProjects\pds\Esercitazione3\Symbol.cpp
+
+CMakeFiles/Esercitazione3.dir/Symbol.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Esercitazione3.dir/Symbol.cpp.i"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\CLionProjects\pds\Esercitazione3\Symbol.cpp > CMakeFiles\Esercitazione3.dir\Symbol.cpp.i
+
+CMakeFiles/Esercitazione3.dir/Symbol.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione3.dir/Symbol.cpp.s"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione3\Symbol.cpp -o CMakeFiles\Esercitazione3.dir\Symbol.cpp.s
+
+CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: CMakeFiles/Esercitazione3.dir/flags.make
+CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: ../SharedEditor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\Esercitazione3.dir\SharedEditor.cpp.obj -c D:\Workspace\CLionProjects\pds\Esercitazione3\SharedEditor.cpp
+
+CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.i"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\Workspace\CLionProjects\pds\Esercitazione3\SharedEditor.cpp > CMakeFiles\Esercitazione3.dir\SharedEditor.cpp.i
+
+CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.s"
+	D:\Qt\Tools\mingw730_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\Workspace\CLionProjects\pds\Esercitazione3\SharedEditor.cpp -o CMakeFiles\Esercitazione3.dir\SharedEditor.cpp.s
+
 # Object files for target Esercitazione3
 Esercitazione3_OBJECTS = \
-"CMakeFiles/Esercitazione3.dir/main.cpp.obj"
+"CMakeFiles/Esercitazione3.dir/main.cpp.obj" \
+"CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj" \
+"CMakeFiles/Esercitazione3.dir/Message.cpp.obj" \
+"CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj" \
+"CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj"
 
 # External object files for target Esercitazione3
 Esercitazione3_EXTERNAL_OBJECTS =
 
 Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/main.cpp.obj
+Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj
+Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/Message.cpp.obj
+Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj
+Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj
 Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/build.make
 Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/linklibs.rsp
 Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/objects1.rsp
 Esercitazione3.exe: CMakeFiles/Esercitazione3.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Esercitazione3.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Workspace\CLionProjects\pds\Esercitazione3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable Esercitazione3.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Esercitazione3.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

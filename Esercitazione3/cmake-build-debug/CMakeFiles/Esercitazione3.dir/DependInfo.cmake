@@ -4,6 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/Workspace/CLionProjects/pds/Esercitazione3/Message.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/Message.cpp.obj"
+  "D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj"
+  "D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj"
+  "D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj"
   "D:/Workspace/CLionProjects/pds/Esercitazione3/main.cpp" "D:/Workspace/CLionProjects/pds/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

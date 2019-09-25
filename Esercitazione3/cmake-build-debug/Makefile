@@ -122,6 +122,114 @@ Esercitazione3/fast:
 	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/build
 .PHONY : Esercitazione3/fast
 
+Message.obj: Message.cpp.obj
+
+.PHONY : Message.obj
+
+# target to build an object file
+Message.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/Message.cpp.obj
+.PHONY : Message.cpp.obj
+
+Message.i: Message.cpp.i
+
+.PHONY : Message.i
+
+# target to preprocess a source file
+Message.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/Message.cpp.i
+.PHONY : Message.cpp.i
+
+Message.s: Message.cpp.s
+
+.PHONY : Message.s
+
+# target to generate assembly for a file
+Message.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/Message.cpp.s
+.PHONY : Message.cpp.s
+
+NetworkServer.obj: NetworkServer.cpp.obj
+
+.PHONY : NetworkServer.obj
+
+# target to build an object file
+NetworkServer.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj
+.PHONY : NetworkServer.cpp.obj
+
+NetworkServer.i: NetworkServer.cpp.i
+
+.PHONY : NetworkServer.i
+
+# target to preprocess a source file
+NetworkServer.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.i
+.PHONY : NetworkServer.cpp.i
+
+NetworkServer.s: NetworkServer.cpp.s
+
+.PHONY : NetworkServer.s
+
+# target to generate assembly for a file
+NetworkServer.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.s
+.PHONY : NetworkServer.cpp.s
+
+SharedEditor.obj: SharedEditor.cpp.obj
+
+.PHONY : SharedEditor.obj
+
+# target to build an object file
+SharedEditor.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj
+.PHONY : SharedEditor.cpp.obj
+
+SharedEditor.i: SharedEditor.cpp.i
+
+.PHONY : SharedEditor.i
+
+# target to preprocess a source file
+SharedEditor.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.i
+.PHONY : SharedEditor.cpp.i
+
+SharedEditor.s: SharedEditor.cpp.s
+
+.PHONY : SharedEditor.s
+
+# target to generate assembly for a file
+SharedEditor.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.s
+.PHONY : SharedEditor.cpp.s
+
+Symbol.obj: Symbol.cpp.obj
+
+.PHONY : Symbol.obj
+
+# target to build an object file
+Symbol.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/Symbol.cpp.obj
+.PHONY : Symbol.cpp.obj
+
+Symbol.i: Symbol.cpp.i
+
+.PHONY : Symbol.i
+
+# target to preprocess a source file
+Symbol.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/Symbol.cpp.i
+.PHONY : Symbol.cpp.i
+
+Symbol.s: Symbol.cpp.s
+
+.PHONY : Symbol.s
+
+# target to generate assembly for a file
+Symbol.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione3.dir\build.make CMakeFiles/Esercitazione3.dir/Symbol.cpp.s
+.PHONY : Symbol.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +266,18 @@ help:
 	@echo ... Esercitazione3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Message.obj
+	@echo ... Message.i
+	@echo ... Message.s
+	@echo ... NetworkServer.obj
+	@echo ... NetworkServer.i
+	@echo ... NetworkServer.s
+	@echo ... SharedEditor.obj
+	@echo ... SharedEditor.i
+	@echo ... SharedEditor.s
+	@echo ... Symbol.obj
+	@echo ... Symbol.i
+	@echo ... Symbol.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

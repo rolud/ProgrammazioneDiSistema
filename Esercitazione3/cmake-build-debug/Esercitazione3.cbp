@@ -80,6 +80,30 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/Message.cpp">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.cpp">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.h">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.cpp">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.h">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.cpp">
+			<Option target="Esercitazione3"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h">
+			<Option target="Esercitazione3"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Esercitazione3/main.cpp">
 			<Option target="Esercitazione3"/>
 		</Unit>
