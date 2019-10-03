@@ -6,8 +6,19 @@
 #define ESERCITAZIONE3_MESSAGE_H
 
 
-class Message {
+#include "Symbol.h"
 
+class Message {
+public:
+    enum Action {INSERT,DELETE};
+
+    Message(Symbol symbol, Action action);
+    const Symbol &get_symbol() const;
+    Action get_action() const;
+
+private:
+    Symbol _symbol;
+    Action _action;
 };
 
 

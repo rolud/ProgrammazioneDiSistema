@@ -11,6 +11,11 @@
 class Symbol {
 public:
     Symbol(std::string id, char value, std::vector<int> position);
+
+    const std::string &get_id() const;
+    char get_value() const;
+    const std::vector<int> &get_position() const;
+
 private:
     std::string _id;
     char _value;

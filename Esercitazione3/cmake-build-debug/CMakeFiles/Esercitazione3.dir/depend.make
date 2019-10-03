@@ -3,6 +3,7 @@
 
 CMakeFiles/Esercitazione3.dir/Message.cpp.obj: ../Message.cpp
 CMakeFiles/Esercitazione3.dir/Message.cpp.obj: ../Message.h
+CMakeFiles/Esercitazione3.dir/Message.cpp.obj: ../Symbol.h
 
 CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj: ../Message.h
 CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj: ../NetworkServer.cpp
@@ -11,6 +12,7 @@ CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj: ../SharedEditor.h
 CMakeFiles/Esercitazione3.dir/NetworkServer.cpp.obj: ../Symbol.h
 
 CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: ../Message.h
+CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: ../NetworkServer.h
 CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: ../SharedEditor.cpp
 CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: ../SharedEditor.h
 CMakeFiles/Esercitazione3.dir/SharedEditor.cpp.obj: ../Symbol.h

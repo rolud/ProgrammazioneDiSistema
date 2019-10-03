@@ -25,10 +25,20 @@ public:
     const std::vector<Symbol> &get_symbols() const;
 
 private:
+
+    Symbol genereteSymbol(int index, char value);
+    std::vector<int> generatePosBetween(std::vector<int> posBefore, std::vector<int> posAfter, std::vector<int> newPos = {}, int level = 0);
+    int generatePos(int min, int max, std::string boundaryStrategy);
+    std::string choiceBoundaryStrategy(int level);
+
     NetworkServer& _server;
     int _siteId;
     std::vector<Symbol> _symbols;
     int _counter;
+
+    int _base;
+    int _boundery;
+    std::string _strategy;
 };
 
 
