@@ -69,3 +69,7 @@ ed2: cht
 + Algoritmo CRDT
 + Uso dei contenitori della Standard Template Library
 + Analisi e soluzione dei problemi
+
+#### Documentazione
++ Conclave: https://conclave-team.github.io/conclave-site/#what-is-a-real-time-collaborative-text-editor
++ Codice sorgente JavaScript Conclave: https://github.com/conclave-team/conclave
