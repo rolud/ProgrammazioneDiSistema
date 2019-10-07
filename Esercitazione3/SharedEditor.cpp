@@ -9,11 +9,19 @@
 #include "NetworkServer.h"
 #include "Message.h"
 
-SharedEditor::SharedEditor(NetworkServer &server) : _server(server) {
-    _siteId = _server.connect(this);
-    _counter = 100;
-    _boundery = 10;
-    _base = 32;
+SharedEditor::SharedEditor(NetworkServer &server) : server_(server) {
+    siteId_ = server_.connect(this);
+    counter_ = 100;
+    boundery_ = 10;
+    base_ = 32;
+}
+
+int SharedEditor::get_siteId() const {
+    return siteId_;
+}
+
+const std::vector<Symbol> &SharedEditor::get_symbols() const {
+    return symbols_;
 }
 
 /**
@@ -24,13 +32,13 @@ SharedEditor::SharedEditor(NetworkServer &server) : _server(server) {
  * @param value
  */
 void SharedEditor::localInsert(int index, char value) {
-    const Symbol sym = genereteSymbol(index, value);
-    if (index == _symbols.size()) {
-        _symbols.push_back(sym);
-    }
-    _symbols.insert(_symbols.begin() + index, sym);
-    Message msg(sym, Message::Action::INSERT);
-    _server.send(msg);
+    const Symbol sym = generateSymbol(index, value);
+    if (index == symbols_.size())
+        symbols_.push_back(sym);
+    else
+        symbols_.insert(symbols_.begin() + index, sym);
+    Message msg(sym, Message::Action::INSERT, siteId_);
+    server_.send(msg);
 }
 
 /**
@@ -40,13 +48,29 @@ void SharedEditor::localInsert(int index, char value) {
  * @param value
  * @return
  */
-Symbol SharedEditor::genereteSymbol(int index, char value) {
-    const std::vector<int> posBefore = _symbols[index - 1].get_position();
-    const std::vector<int> posAfter  = _symbols[index].get_position();
+Symbol SharedEditor::generateSymbol(int index, char value) {
+    const std::vector<int> posBefore = findPosBefore(index);
+    const std::vector<int> posAfter  = findPosAfter(index);
     const std::vector<int> newPos    = generatePosBetween(posBefore, posAfter);
-    _counter++;
-    Symbol newSym(std::to_string(_siteId) + std::to_string(_counter), value, newPos);
+    counter_++;
+    Symbol newSym(std::to_string(siteId_) + std::to_string(counter_), value, newPos);
     return newSym;
+}
+
+std::vector<int> SharedEditor::findPosBefore(int index) {
+    if (index == 0)
+        return {};
+    else if (index == symbols_.size())
+        return  symbols_[index - 1].get_position();
+    else
+        return symbols_[index - 1].get_position();
+}
+
+std::vector<int> SharedEditor::findPosAfter(int index) {
+    if (index == symbols_.size())
+        return {};
+    else
+        return symbols_[index].get_position();
 }
 
 /**
@@ -62,21 +86,25 @@ Symbol SharedEditor::genereteSymbol(int index, char value) {
  */
 std::vector<int> SharedEditor::generatePosBetween(std::vector<int> posBefore, std::vector<int> posAfter, std::vector<int> newPos, int level) {
     int pos1, pos2;
-    int base = static_cast<int>(pow(2, level) * _base);
-    std::string boundary_strategy = choiceBoundaryStrategy(level);
+    int base = static_cast<int>(pow(2, level) * base_);
+    Boundary boundary_strategy = choiceBoundaryStrategy(level);
 
-    if (level <= posBefore.size()) pos1 = posBefore[level];
-    else pos1 = 0;
+    if (level <= posBefore.size() && !posBefore.empty())
+        pos1 = posBefore[level];
+    else
+        pos1 = 0;
 
-    if (!posAfter.empty()) pos2 = posAfter[0];
-    else pos2 = base;
+    if (!posAfter.empty())
+        pos2 = posAfter[0];
+    else
+        pos2 = base;
 
     if (pos2 - pos1 > 1) {
         // we can insert
         int pos = generatePos(pos1, pos2, boundary_strategy);
         newPos.push_back(pos);
         return newPos;
-    } else if (pos2 - pos1 == 0) {
+    } else if (pos2 - pos1 == 1) {
         // explore next level
         newPos.push_back(pos1);
         return generatePosBetween(posBefore, {}, newPos, level + 1);
@@ -93,15 +121,15 @@ std::vector<int> SharedEditor::generatePosBetween(std::vector<int> posBefore, st
  * @param boundaryStrategy : + per boundary+, - per boundary-
  * @return posizione selezionata
  */
-int SharedEditor::generatePos(int min, int max, std::string boundaryStrategy) {
-    if ((max - min) < _boundery) {
+int SharedEditor::generatePos(int min, int max, Boundary boundaryStrategy) {
+    if ((max - min) < boundery_) {
         min = min + 1;
     } else {
-        if (boundaryStrategy == "+") {
-            min = max - _boundery;
-        } else {
+        if (boundaryStrategy == Boundary::PLUS) {
+            min = max - boundery_;
+        } else if (boundaryStrategy == Boundary::MINUS){
             min = min + 1;
-            max = min + _boundery;
+            max = min + boundery_;
         }
     }
     std::random_device rd;
@@ -118,8 +146,8 @@ int SharedEditor::generatePos(int min, int max, std::string boundaryStrategy) {
  * @param level
  * @return
  */
-std::string SharedEditor::choiceBoundaryStrategy(int level) {
-    return (level % 2) == 0 ? "+" : "-"; // todo we can implement other strategy
+SharedEditor::Boundary SharedEditor::choiceBoundaryStrategy(int level) {
+    return (level % 2) == 0 ? Boundary::PLUS : Boundary::MINUS; // todo we can implement other strategy
 }
 
 /**
@@ -129,10 +157,10 @@ std::string SharedEditor::choiceBoundaryStrategy(int level) {
  * @param index
  */
 void SharedEditor::localErase(int index) {
-    Symbol sym = _symbols[index];
-    _symbols.erase(_symbols.begin() + index);
-    Message msg(sym, Message::Action::DELETE);
-    _server.send(msg);
+    Symbol sym = symbols_[index];
+    symbols_.erase(symbols_.begin() + index);
+    Message msg(sym, Message::Action::DELETE, siteId_);
+    server_.send(msg);
 }
 
 /**
@@ -141,7 +169,51 @@ void SharedEditor::localErase(int index) {
  * @param msg
  */
 void SharedEditor::process(const Message &msg) {
+    switch (msg.get_action()) {
+        case Message::Action::INSERT:
+            remoteInsert(msg.get_symbol());
+            break;
+        case Message::Action::DELETE:
+            remoteErase(msg.get_symbol());
+            break;
+    }
+}
 
+/**
+ * inserisce un simbolo creato da un altro editor
+ *
+ * @param symbol
+ */
+void SharedEditor::remoteInsert(const Symbol &symbol) {
+    int index = findInsertPosition(symbol);
+    symbols_.insert(symbols_.begin() + index, symbol);
+}
+
+int SharedEditor::findInsertPosition(const Symbol &symbol) {
+
+    if (symbols_.empty())
+        return 0;
+
+    if (symbols_[symbols_.size() - 1] < symbol)
+        return symbols_.size();
+
+    for (int i = 0; i < symbols_.size(); i++) {
+        if (symbols_[i] > symbol) {
+            return i;
+        }
+    }
+}
+
+/**
+ * elimina un simbolo cancellato da un altro editor
+ *
+ * @param symbol
+ */
+void SharedEditor::remoteErase(const Symbol &symbol) {
+    for (int i = 0; i < symbols_.size(); i++) {
+        if (symbols_[i].get_id() == symbol.get_id())
+            symbols_.erase(symbols_.begin() + i);
+    }
 }
 
 /**
@@ -150,15 +222,16 @@ void SharedEditor::process(const Message &msg) {
  * @return
  */
 std::string SharedEditor::to_string() {
-    return nullptr;
+    std::string string;
+    for (const Symbol &s : symbols_) {
+        string += s.get_value();
+    }
+    return string;
 }
 
-int SharedEditor::get_siteId() const {
-    return _siteId;
-}
 
-const std::vector<Symbol> &SharedEditor::get_symbols() const {
-    return _symbols;
-}
+
+
+
 
 

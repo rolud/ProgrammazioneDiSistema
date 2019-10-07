@@ -1,40 +1,40 @@
 # Programmazione di sistema
 #### Anno accademico 2018-2019
 ### Esercitazione 3
-Facendo riferimento all’algoritmo **CRDT** descritto nel progetto del corso, si implementino le seguenti classi.
+Facendo riferimento allï¿½algoritmo **CRDT** descritto nel progetto del corso, si implementino le seguenti classi.
 
 La classe **NetworkServer** simula il comportamento di un sistema di rete. Internamente essa mantiene un vettore di puntatori ad oggetti SharedEditor, una coda di oggetti di tipo Message, che rappresentano informazioni da trasmettere verso i diversi client.
 Essa offre i seguenti metodi pubblici:
 + **int connect(SharedEditor\* sharedEditor);**
-Registra, nel proprio vettore di puntatori a SharedEditor, il puntatore ricevuto e restituisce un identificatore univoco mediante il quale l’editor potrà distinguersi dalle altre istanze della stessa classe
+Registra, nel proprio vettore di puntatori a SharedEditor, il puntatore ricevuto e restituisce un identificatore univoco mediante il quale lï¿½editor potrï¿½ distinguersi dalle altre istanze della stessa classe
 + **void disconnect(SharedEditor\* sharedEditor);**
 Elimina il puntatore dal vettore degli editor collegati.
 + **void send(const Message& m);**
 Aggiunge il messaggio m alla coda dei messaggi da distribuire, senza ancora mandarlo.
 + **void dispatchMessages();**
-Distribuisce tutti i messaggi accodati a tutti gli editor attualmente collegati, fatta eccezione, però, per l’originatore del messaggio stesso.
+Distribuisce tutti i messaggi accodati a tutti gli editor attualmente collegati, fatta eccezione, perï¿½, per lï¿½originatore del messaggio stesso.
 
-La classe **Symbol** modella un singolo carattere all’interno dell’editor; oltre al carattere vero e proprio, al suo interno contiene un identificativo univoco (costituito dall’id associato all’istanza del client che lo ha generato e un numero progressivo definito da quest’ultimo) e una posizione frazionaria, rappresentata mediante un std::vector<int>. Tale posizione è tale per cui due elementi consecutivi all’interno dell’editor devono avere posizione frazionaria strettamente crescente.
+La classe **Symbol** modella un singolo carattere allï¿½interno dellï¿½editor; oltre al carattere vero e proprio, al suo interno contiene un identificativo univoco (costituito dallï¿½id associato allï¿½istanza del client che lo ha generato e un numero progressivo definito da questï¿½ultimo) e una posizione frazionaria, rappresentata mediante un std::vector<int>. Tale posizione ï¿½ tale per cui due elementi consecutivi allï¿½interno dellï¿½editor devono avere posizione frazionaria strettamente crescente.
 
 La classe **SharedEditor** modella una istanza di un editor condiviso. Essa contiene, al proprio interno diverse informazioni private:
-+ **NetworkServer& _server;**
-Rappresenta l’istanza condivisa del server di rete. Viene passato al costruttore che provvede ad invocarne il metodo connect(…) allo scopo di ottenerne un siteId
-+ **int _siteId;**
-Identificatore univoco, assegnato all’atto della connessione con il server
-+ **std::vector<Symbol> _symbols;**
++ **NetworkServer& server_;**
+Rappresenta lï¿½istanza condivisa del server di rete. Viene passato al costruttore che provvede ad invocarne il metodo connect(ï¿½) allo scopo di ottenerne un siteId
++ **int siteId_;**
+Identificatore univoco, assegnato allï¿½atto della connessione con il server
++ **std::vector<Symbol> symbols_;**
 Contiene la sequenza di tutti i simboli presenti nel documento.
-+ **int _counter;**
-Contiene un numero che viene via via incrementato e utilizzato per creare, insieme a _siteId un identificativo univoco a tutti i caratteri che vengono inseriti, attraverso questa istanza di editor, nel documento.
++ **int counter_;**
+Contiene un numero che viene via via incrementato e utilizzato per creare, insieme a siteId_ un identificativo univoco a tutti i caratteri che vengono inseriti, attraverso questa istanza di editor, nel documento.
 
 Tale classe offre i seguenti metodi pubblici:
 + **void localInsert(int index, char value);**
-Questo metodo costruisce un symbol che incapsula il carattere value, gli associa un identificativo univoco ed una posizione frazionaria tale da risultare compresa tra le posizioni frazionarie degli elementi di _symbols all’indice index-1 e index (se esistenti). A seguito dell’inserimento, nell’indice index verrà a trovarsi il nuovo simbolo, e tutti quelli successivi scaleranno di una unità. Le loro posizioni frazionarie, tuttavia, non verranno modificate e si manterrà sempre l’invariante tale per cui tutti gli elementi adiacenti nel vettore _symbols hanno posizione frazionaria strettamente minore l’una dell’altra. A seguito dell’inserimento, prepara un oggetto di tipo Message, all’interno del quale descrive l’azione compiuta: inserimento da parte di _siteId del carattere value, con identificativo univoco e posizione frazionaria corrispondente. Tale messaggio verrà inviato all’oggetto _server che provvederà ad accodarlo, in attesa di inviarlo a tutte le altre istanze della classe SharedEditor.
+Questo metodo costruisce un symbol che incapsula il carattere value, gli associa un identificativo univoco ed una posizione frazionaria tale da risultare compresa tra le posizioni frazionarie degli elementi di symbols_ allï¿½indice index-1 e index (se esistenti). A seguito dellï¿½inserimento, nellï¿½indice index verrï¿½ a trovarsi il nuovo simbolo, e tutti quelli successivi scaleranno di una unitï¿½. Le loro posizioni frazionarie, tuttavia, non verranno modificate e si manterrï¿½ sempre lï¿½invariante tale per cui tutti gli elementi adiacenti nel vettore symbols_ hanno posizione frazionaria strettamente minore lï¿½una dellï¿½altra. A seguito dellï¿½inserimento, prepara un oggetto di tipo Message, allï¿½interno del quale descrive lï¿½azione compiuta: inserimento da parte di siteId_ del carattere value, con identificativo univoco e posizione frazionaria corrispondente. Tale messaggio verrï¿½ inviato allï¿½oggetto server_ che provvederï¿½ ad accodarlo, in attesa di inviarlo a tutte le altre istanze della classe SharedEditor.
 + **void localErase(int index);**
-Questo metodo elimina dal vettore _symbols l’elemento all’indice indicato, prepara un oggetto di tipo Message in cui descrive l’azione compiuta e lo affida all’oggetto _server affinché lo consegni agli altri SharedEditor.
+Questo metodo elimina dal vettore symbols_ lï¿½elemento allï¿½indice indicato, prepara un oggetto di tipo Message in cui descrive lï¿½azione compiuta e lo affida allï¿½oggetto server_ affinchï¿½ lo consegni agli altri SharedEditor.
 + **void process(const Message& m);**
-Questo metodo esamina il contenuto del messaggio m e provvede a eseguirne le relative azioni: se si tratta di un messaggio di inserimento provvede ad identificare, a partire dalla posizione frazionaria contenuta nel messaggio, l’indice nel vettore _symbols in cui inserire il nuovo simbolo; se, invece, si tratta di una cancellazione, cerca nel vettore _symbols se è presente alla posizione frazionaria contenuta nel messaggio un simbolo con l’identificatore univoco corrispondente e, nel caso, lo elimina.
+Questo metodo esamina il contenuto del messaggio m e provvede a eseguirne le relative azioni: se si tratta di un messaggio di inserimento provvede ad identificare, a partire dalla posizione frazionaria contenuta nel messaggio, lï¿½indice nel vettore symbols_ in cui inserire il nuovo simbolo; se, invece, si tratta di una cancellazione, cerca nel vettore symbols_ se ï¿½ presente alla posizione frazionaria contenuta nel messaggio un simbolo con lï¿½identificatore univoco corrispondente e, nel caso, lo elimina.
 + **std::string to_string();**
-Ricostruisce la sequenza dei caratteri contenuta nell’editor
+Ricostruisce la sequenza dei caratteri contenuta nellï¿½editor
 
 #### Esempio di uso
 ```c++

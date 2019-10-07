@@ -19,3 +19,33 @@ char Symbol::get_value() const {
 const std::vector<int> &Symbol::get_position() const {
     return _position;
 }
+
+bool Symbol::operator<(const Symbol &s) {
+    auto l = this->get_position();
+    auto r = s.get_position();
+    int min = std::min(l.size(), r.size());
+    for (int i = 0; i < min; i++) {
+        int l1 = l[i];
+        int r1 = r[i];
+        if (l1 < r1)
+            return true;
+    }
+    if (l.size() < r.size())
+        return true;
+    return false;
+}
+
+bool Symbol::operator>(const Symbol &s) {
+    auto l = this->get_position();
+    auto r = s.get_position();
+    int min = std::min(l.size(), r.size());
+    for (int i = 0; i < min; i++) {
+        int l1 = l[i];
+        int r1 = r[i];
+        if (l1 > r1)
+            return true;
+    }
+    if (l.size() > r.size())
+        return true;
+    return false;
+}

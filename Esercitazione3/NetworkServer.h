@@ -22,9 +22,9 @@ public:
     void send(const Message& msg);
     void dispatchMessages();
 private:
-    int _idcounter;
-    std::map<int, SharedEditor*> _editors;
-    std::queue<Message> _messages;
+    int idcounter_;
+    std::map<int, SharedEditor*> editors_;
+    std::queue<Message> messages_;
 
 };
 

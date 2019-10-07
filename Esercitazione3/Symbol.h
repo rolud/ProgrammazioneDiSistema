@@ -16,6 +16,9 @@ public:
     char get_value() const;
     const std::vector<int> &get_position() const;
 
+    bool operator < (const Symbol &s);
+    bool operator > (const Symbol &s);
+
 private:
     std::string _id;
     char _value;

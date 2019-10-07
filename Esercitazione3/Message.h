@@ -12,14 +12,17 @@ class Message {
 public:
     enum Action {INSERT,DELETE};
 
-    Message(Symbol symbol, Action action);
+    Message(Symbol symbol, Action action, int editor_id);
     const Symbol &get_symbol() const;
     Action get_action() const;
+    int get_editor_id() const;
 
 private:
-    Symbol _symbol;
-    Action _action;
+    Symbol symbol_;
+    Action action_;
+    int editor_id_;
 };
+
 
 
 #endif //ESERCITAZIONE3_MESSAGE_H

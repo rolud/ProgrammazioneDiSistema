@@ -6,29 +6,32 @@
 #include <map>
 
 NetworkServer::NetworkServer() {
-    _idcounter = 100;
+    idcounter_ = 100;
 }
 
 int NetworkServer::connect(SharedEditor *sharedEditor) {
     if (sharedEditor == nullptr) return -1;
-    _editors.insert(std::pair<int,SharedEditor*>(_idcounter, sharedEditor));
-    _idcounter++;
-    return _idcounter;
+    idcounter_++;
+    editors_.insert(std::pair<int,SharedEditor*>(idcounter_, sharedEditor));
+    return idcounter_;
 }
 
 void NetworkServer::disconnect(SharedEditor *sharedEditor) {
     if (sharedEditor == nullptr) return;
-    _editors.erase(sharedEditor->get_siteId());
+    editors_.erase(sharedEditor->get_siteId());
 }
 
 void NetworkServer::send(const Message &msg) {
-    _messages.push(msg);
+    messages_.push(msg);
 }
 
 void NetworkServer::dispatchMessages() {
-    while (!_messages.empty()) {
-        Message m = _messages.front();
-        // send message to all but not to creator
-        _messages.pop();
+    while (!messages_.empty()) {
+        Message msg = messages_.front();
+        for (auto iter = editors_.begin(); iter != editors_.end(); iter++) {
+            if (iter->first != msg.get_editor_id())
+                iter->second->process(msg);
+        }
+        messages_.pop();
     }
 }

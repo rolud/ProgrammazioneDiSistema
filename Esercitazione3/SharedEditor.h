@@ -26,19 +26,30 @@ public:
 
 private:
 
-    Symbol genereteSymbol(int index, char value);
+
+
+    NetworkServer& server_;
+    int siteId_;
+    std::vector<Symbol> symbols_;
+    int counter_;
+
+    int base_;
+    int boundery_;
+    std::string strategy_;
+
+    enum Boundary {PLUS, MINUS};
+
+    std::vector<int> findPosBefore(int index);
+    std::vector<int> findPosAfter(int index);
+    Symbol generateSymbol(int index, char value);
     std::vector<int> generatePosBetween(std::vector<int> posBefore, std::vector<int> posAfter, std::vector<int> newPos = {}, int level = 0);
-    int generatePos(int min, int max, std::string boundaryStrategy);
-    std::string choiceBoundaryStrategy(int level);
+    int generatePos(int min, int max, SharedEditor::Boundary boundaryStrategy);
+    SharedEditor::Boundary choiceBoundaryStrategy(int level);
+    void remoteInsert(const Symbol &symbol);
+    void remoteErase(const Symbol &symbol);
 
-    NetworkServer& _server;
-    int _siteId;
-    std::vector<Symbol> _symbols;
-    int _counter;
+    int findInsertPosition(const Symbol &symbol);
 
-    int _base;
-    int _boundery;
-    std::string _strategy;
 };
 
 

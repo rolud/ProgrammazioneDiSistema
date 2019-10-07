@@ -6,19 +6,9 @@
 
 #IncludeRegexTransform: 
 
-D:/Workspace/CLionProjects/pds/Esercitazione3/Message.cpp
-Message.h
-D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
-
 D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
 Symbol.h
 D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h
-
-D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.cpp
-NetworkServer.h
-D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.h
-map
--
 
 D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.h
 SharedEditor.h
@@ -30,20 +20,6 @@ queue
 map
 -
 
-D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.cpp
-string
--
-cmath
--
-random
--
-SharedEditor.h
-D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.h
-NetworkServer.h
-D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.h
-Message.h
-D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
-
 D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.h
 string
 -
@@ -51,10 +27,6 @@ vector
 -
 Message.h
 D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
-Symbol.h
-D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h
-
-D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.cpp
 Symbol.h
 D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h
 
