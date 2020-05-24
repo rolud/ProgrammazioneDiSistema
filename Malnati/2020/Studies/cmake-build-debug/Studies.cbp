@@ -86,6 +86,12 @@
 		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h">
 			<Option target="Studies"/>
 		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/MyString.cpp">
+			<Option target="Studies"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/MyString.h">
+			<Option target="Studies"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/main.cpp">
 			<Option target="Studies"/>
 		</Unit>

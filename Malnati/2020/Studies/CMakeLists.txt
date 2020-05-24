@@ -3,4 +3,4 @@ project(Studies)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Studies main.cpp Buffer.cpp Buffer.h)
+add_executable(Studies main.cpp Buffer.cpp Buffer.h MyString.cpp MyString.h)

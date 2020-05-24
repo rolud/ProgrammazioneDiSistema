@@ -47,10 +47,10 @@ RM = "D:\Windows\Programmi\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\Workspace\CLionProjects\pds\Malnati\2020\Studies
+CMAKE_SOURCE_DIR = D:\Workspace\CLionProjects\pds\Malnati\2020\Esercitazione1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\Workspace\CLionProjects\pds\Malnati\2020\Studies\cmake-build-debug
+CMAKE_BINARY_DIR = D:\Workspace\CLionProjects\pds\Malnati\2020\Esercitazione1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\CLionProjects\pds\Malnati\2020\Studies\cmake-build-debug\CMakeFiles D:\Workspace\CLionProjects\pds\Malnati\2020\Studies\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\CLionProjects\pds\Malnati\2020\Esercitazione1\cmake-build-debug\CMakeFiles D:\Workspace\CLionProjects\pds\Malnati\2020\Esercitazione1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\CLionProjects\pds\Malnati\2020\Studies\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Workspace\CLionProjects\pds\Malnati\2020\Esercitazione1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,71 +110,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Studies
+# Target rules for targets named Esercitazione1
 
 # Build rule for target.
-Studies: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Studies
-.PHONY : Studies
+Esercitazione1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 Esercitazione1
+.PHONY : Esercitazione1
 
 # fast build rule for target.
-Studies/fast:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/build
-.PHONY : Studies/fast
+Esercitazione1/fast:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/build
+.PHONY : Esercitazione1/fast
 
-Buffer.obj: Buffer.cpp.obj
+Message.obj: Message.cpp.obj
 
-.PHONY : Buffer.obj
-
-# target to build an object file
-Buffer.cpp.obj:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/Buffer.cpp.obj
-.PHONY : Buffer.cpp.obj
-
-Buffer.i: Buffer.cpp.i
-
-.PHONY : Buffer.i
-
-# target to preprocess a source file
-Buffer.cpp.i:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/Buffer.cpp.i
-.PHONY : Buffer.cpp.i
-
-Buffer.s: Buffer.cpp.s
-
-.PHONY : Buffer.s
-
-# target to generate assembly for a file
-Buffer.cpp.s:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/Buffer.cpp.s
-.PHONY : Buffer.cpp.s
-
-MyString.obj: MyString.cpp.obj
-
-.PHONY : MyString.obj
+.PHONY : Message.obj
 
 # target to build an object file
-MyString.cpp.obj:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/MyString.cpp.obj
-.PHONY : MyString.cpp.obj
+Message.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/Message.cpp.obj
+.PHONY : Message.cpp.obj
 
-MyString.i: MyString.cpp.i
+Message.i: Message.cpp.i
 
-.PHONY : MyString.i
+.PHONY : Message.i
 
 # target to preprocess a source file
-MyString.cpp.i:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/MyString.cpp.i
-.PHONY : MyString.cpp.i
+Message.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/Message.cpp.i
+.PHONY : Message.cpp.i
 
-MyString.s: MyString.cpp.s
+Message.s: Message.cpp.s
 
-.PHONY : MyString.s
+.PHONY : Message.s
 
 # target to generate assembly for a file
-MyString.cpp.s:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/MyString.cpp.s
-.PHONY : MyString.cpp.s
+Message.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/Message.cpp.s
+.PHONY : Message.cpp.s
+
+MessageStore.obj: MessageStore.cpp.obj
+
+.PHONY : MessageStore.obj
+
+# target to build an object file
+MessageStore.cpp.obj:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/MessageStore.cpp.obj
+.PHONY : MessageStore.cpp.obj
+
+MessageStore.i: MessageStore.cpp.i
+
+.PHONY : MessageStore.i
+
+# target to preprocess a source file
+MessageStore.cpp.i:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/MessageStore.cpp.i
+.PHONY : MessageStore.cpp.i
+
+MessageStore.s: MessageStore.cpp.s
+
+.PHONY : MessageStore.s
+
+# target to generate assembly for a file
+MessageStore.cpp.s:
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/MessageStore.cpp.s
+.PHONY : MessageStore.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -182,7 +182,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -191,7 +191,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -200,7 +200,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\Studies.dir\build.make CMakeFiles/Studies.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\Esercitazione1.dir\build.make CMakeFiles/Esercitazione1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -209,15 +209,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Studies
+	@echo ... Esercitazione1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Buffer.obj
-	@echo ... Buffer.i
-	@echo ... Buffer.s
-	@echo ... MyString.obj
-	@echo ... MyString.i
-	@echo ... MyString.s
+	@echo ... Message.obj
+	@echo ... Message.i
+	@echo ... Message.s
+	@echo ... MessageStore.obj
+	@echo ... MessageStore.i
+	@echo ... MessageStore.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
