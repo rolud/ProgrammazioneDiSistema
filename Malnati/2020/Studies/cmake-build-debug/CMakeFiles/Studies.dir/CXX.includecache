@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.cpp
+iostream
+-
+Buffer.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/main.cpp
+iostream
+-
+Buffer.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
+

@@ -1,0 +1,3 @@
+"D:\Windows\Programmi\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\Studies.dir/objects.a
+D:\Qt\Tools\mingw730_64\bin\ar.exe cr CMakeFiles\Studies.dir/objects.a @CMakeFiles\Studies.dir\objects1.rsp
+D:\Qt\Tools\mingw730_64\bin\g++.exe -g   -Wl,--whole-archive CMakeFiles\Studies.dir/objects.a -Wl,--no-whole-archive  -o Studies.exe -Wl,--out-implib,libStudies.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Studies.dir\linklibs.rsp
