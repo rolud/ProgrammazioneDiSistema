@@ -4,6 +4,14 @@
 CMakeFiles/Studies.dir/Buffer.cpp.obj: ../Buffer.cpp
 CMakeFiles/Studies.dir/Buffer.cpp.obj: ../Buffer.h
 
+CMakeFiles/Studies.dir/MyString.cpp.obj: ../MyString.cpp
+CMakeFiles/Studies.dir/MyString.cpp.obj: ../MyString.h
+
 CMakeFiles/Studies.dir/main.cpp.obj: ../Buffer.h
 CMakeFiles/Studies.dir/main.cpp.obj: ../main.cpp
+CMakeFiles/Studies.dir/main.cpp.obj: ../patternCRTP/Amount.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../patternCRTP/Constant42.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../patternCRTP/Variable.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../smartPointer/DoublyLinkedList.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../smartPointer/DoubnlyLinkedNode.h
 

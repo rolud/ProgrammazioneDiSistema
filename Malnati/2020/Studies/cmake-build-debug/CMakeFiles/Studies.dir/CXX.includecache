@@ -6,17 +6,41 @@
 
 #IncludeRegexTransform: 
 
-D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.cpp
-iostream
--
-Buffer.h
-D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
-
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
 
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/main.cpp
 iostream
 -
+memory
+-
 Buffer.h
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
+patternCRTP/Amount.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Amount.h
+patternCRTP/Constant42.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Constant42.h
+patternCRTP/Variable.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Variable.h
+smartPointer/DoublyLinkedList.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoublyLinkedList.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Amount.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Constant42.h
+Amount.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Amount.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Variable.h
+Amount.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Amount.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoublyLinkedList.h
+memory
+-
+DoubnlyLinkedNode.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoubnlyLinkedNode.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoubnlyLinkedNode.h
+memory
+-
 

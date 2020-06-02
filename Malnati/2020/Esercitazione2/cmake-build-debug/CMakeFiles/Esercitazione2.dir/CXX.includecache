@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/Base.h
+string
+-
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/Directory.h
+algorithm
+-
+iostream
+-
+map
+-
+memory
+-
+string
+-
+Base.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/Base.h
+File.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/File.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/File.h
+Base.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/Base.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/main.cpp
+iostream
+-
+memory
+-
+Directory.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione2/Directory.h
+
