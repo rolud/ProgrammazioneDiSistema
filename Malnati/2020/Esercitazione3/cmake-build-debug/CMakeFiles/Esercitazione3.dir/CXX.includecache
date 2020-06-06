@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/MapperInputT.h
+string
+-
+
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/ReducerInputT.h
+string
+-
+
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/ResultT.h
+string
+-
+
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/main.cpp
+algorithm
+-
+ctime
+-
+fstream
+-
+iostream
+-
+map
+-
+regex
+-
+vector
+-
+MapperInputT.h
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/MapperInputT.h
+ResultT.h
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/ResultT.h
+ReducerInputT.h
+/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/ReducerInputT.h
+
