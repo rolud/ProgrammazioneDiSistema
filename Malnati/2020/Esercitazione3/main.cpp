@@ -18,6 +18,18 @@ std::vector<ResultT> map_ip(const MapperInputT& input) {
     return std::vector<ResultT> { ResultT(match[0], 1) };
 }
 
+//template<typename MapperInputT, typename ResultT>
+//std::vector<ResultT> map_request(const MapperInputT& input) {
+//    std::string line = input.getContent();
+//    std::smatch match;
+//    std::regex regex_exp("\"(.*?)\"");
+//    std::regex_search(line, match, regex_exp);
+//    std::string str = match[1];
+//    std::string request = str.substr(0, str.find(" "));
+//    return std::vector<ResultT> { ResultT(request, 1) };
+//}
+
+
 template<typename ReducerInputT, typename ResultT>
 ResultT reduce_ip(const ReducerInputT& input) {
     return ResultT(input.getKey(), input.getValue() + input.getAccumulator());
@@ -50,14 +62,14 @@ int main() {
 //    std::string filename("../input_file.txt");
 
     clock_t start_time = std::clock();
-    auto res = mapreduce<MapperInputT, ResultT<int>, ReducerInputT<int, int>>(
+    auto res_ip = mapreduce<MapperInputT, ResultT<int>, ReducerInputT<int, int>>(
             filename,
             map_ip<MapperInputT, ResultT<int>>,
             reduce_ip<ReducerInputT<int,int>, ResultT<int>>
     );
     clock_t end_time = std::clock();
 
-    std::for_each(res.begin(), res.end(), [](auto& r) {
+    std::for_each(res_ip.begin(), res_ip.end(), [](auto& r) {
         std::cout << r.first << " : " << r.second.getValue() << std::endl;
     });
 

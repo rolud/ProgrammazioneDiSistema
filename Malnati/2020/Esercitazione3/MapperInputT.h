@@ -11,9 +11,18 @@
 class MapperInputT {
 
 public:
-    MapperInputT(std::string content) : m_content(std::move(content)) {}
+    explicit MapperInputT(std::string content) : m_content(std::move(content)) {}
 
     std::string getContent() const { return this->m_content; }
+
+    std::vector<char> serialize() const {
+
+    }
+
+    void deserialize(std::shared_ptr<char*> json) {
+
+    }
+
 private:
     std::string m_content;
 };
