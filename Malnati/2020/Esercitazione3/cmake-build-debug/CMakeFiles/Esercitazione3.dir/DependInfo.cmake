@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/main.cpp" "/home/rolud/PoliTO/ProgrammazioneDiSistema/pds-repo/Malnati/2020/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/main.cpp.o"
+  "/home/rolud/PoliTO/PDS/pds-repo/Malnati/2020/Esercitazione3/main.cpp" "/home/rolud/PoliTO/PDS/pds-repo/Malnati/2020/Esercitazione3/cmake-build-debug/CMakeFiles/Esercitazione3.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "/usr/local/boost_1_66_0"
   )
 
 # Targets to which this target links.
