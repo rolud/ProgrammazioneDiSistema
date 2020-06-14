@@ -13,7 +13,7 @@ int main() {
     std::string filename("../input_file.txt");
 
     DurationLogger dl("mapreduce");
-    auto res_ip = mapreduce<MapperInputT, ResultT<int>, ReducerInputT<int, int>>(
+    auto res_ip = mapreduce_concurrent<MapperInputT, ResultT<int>, ReducerInputT<int, int>>(
             filename,
             map_ip<MapperInputT, ResultT<int>>,
             reduce_ip<ReducerInputT<int,int>, ResultT<int>>

@@ -15,6 +15,7 @@
 class MapperInputT {
 
 public:
+    MapperInputT() = default;
     explicit MapperInputT(std::string content) : m_content(std::move(content)) {}
 
     std::string getContent() const { return this->m_content; }
@@ -25,16 +26,18 @@ public:
         std::ostringstream oss;
         boost::property_tree::json_parser::write_json(oss, pt);
         std::string str = oss.str();
+        std::cout << "ser mapper" << str << std::endl;
         return std::vector<char>(str.begin(), str.end());
     }
 
-    void deserialize(std::shared_ptr<char*> json) {
+    void deserialize(std::shared_ptr<char[]> json) {
+        std::cout << "des mapper";
         boost::property_tree::ptree pt;
-        std::string input{ *(json.get()) };
+        std::string input{ (char *)(json.get()) };
         std::istringstream iss(input);
         boost::property_tree::json_parser::read_json(iss, pt);
         this->m_content = pt.get<std::string>("content");
-        std::cout << "deserialize ->" << this->m_content << std::endl;
+        std::cout << json << std::endl;
     }
 
 private:

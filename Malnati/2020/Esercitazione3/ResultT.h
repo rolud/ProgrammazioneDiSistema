@@ -29,16 +29,19 @@ public:
         std::ostringstream oss;
         boost::property_tree::json_parser::write_json(oss, pt);
         std::string json = oss.str();
+        std::cout << "ser result" << json << std::endl;
         return std::vector<char>(json.begin(), json.end());
     }
 
-    void deserialize(std::shared_ptr<char*> json) {
+    void deserialize(std::shared_ptr<char[]> json) {
+        std::cout << "des result";
         boost::property_tree::ptree pt;
         std::string input { (char*) json.get() };
         std::istringstream iss(input);
         boost::property_tree::json_parser::read_json(iss, pt);
         this->m_key = pt.get<std::string>("key");
         this->m_value = pt.get<T>("value");
+        std::cout << json << std::endl;
     }
 private:
     std::string m_key;
