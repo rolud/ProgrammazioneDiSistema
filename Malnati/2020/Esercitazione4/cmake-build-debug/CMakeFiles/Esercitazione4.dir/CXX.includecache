@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/DurationLogger.h
+ctime
+-
+string
+-
+iostream
+-
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/Jobs.h
+condition_variable
+-
+mutex
+-
+queue
+-
+shared_mutex
+-
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/main.cpp
+iostream
+-
+fstream
+-
+regex
+-
+thread
+-
+DurationLogger.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/DurationLogger.h
+Jobs.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/Jobs.h
+

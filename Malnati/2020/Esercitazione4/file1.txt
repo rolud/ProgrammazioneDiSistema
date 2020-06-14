@@ -1,0 +1,10 @@
+Testo con %sequenza% da prendere
+testo senza sequenza
+
+Ciao %rocco%
+guarda che ciao%
+oppure %quadro none% dello %amico% %ragioniere%
+programmazione di %Sistema%
+Cabodi Malnati
+Politecnico %di% torino
+END
