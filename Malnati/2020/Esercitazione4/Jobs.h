@@ -10,6 +10,8 @@
 #include <queue>
 #include <shared_mutex>
 
+#define MAX_QUEUE_SIZE 5
+
 template <class T>
 class Jobs {
 
@@ -23,9 +25,10 @@ public:
      * può essere bloccante se la coda dei job è piena
      */
     void put(T job) {
-        std::lock_guard<std::mutex> lock(this->m_mtx);
+        std::unique_lock<std::mutex> lock(this->m_mtx);
+        this->m_cv_put.wait(lock, [&](){ return this->m_jobs.size() < MAX_QUEUE_SIZE; });
         m_jobs.push(job);
-        this->m_cv.notify_one();
+        this->m_cv_get.notify_one();
     }
 
     /**
@@ -34,10 +37,11 @@ public:
      */
     std::optional<T> get() {
         std::unique_lock<std::mutex> lock(this->m_mtx);
-        this->m_cv.wait(lock, [&](){ return this->m_jobs.size() > 0 || (this->m_jobs.size() == 0 && this->m_end); });
+        this->m_cv_get.wait(lock, [&](){ return this->m_jobs.size() > 0 || (this->m_jobs.size() == 0 && this->m_end); });
         if (m_jobs.size() == 0 && this->m_end) return {};
         T t = m_jobs.front();
         m_jobs.pop();
+        this->m_cv_put.notify_one();
         return t;
     }
 
@@ -49,7 +53,7 @@ public:
 private:
     std::queue<T> m_jobs;
     std::mutex m_mtx;
-    std::condition_variable m_cv;
+    std::condition_variable m_cv_get, m_cv_put;
     bool m_end;
 };
 #endif //UNTITLED_JOBS_H

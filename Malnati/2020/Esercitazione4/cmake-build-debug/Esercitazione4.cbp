@@ -86,6 +86,15 @@
 		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/Jobs.h">
 			<Option target="Esercitazione4"/>
 		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/Line.h">
+			<Option target="Esercitazione4"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/Result.h">
+			<Option target="Esercitazione4"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/functions.h">
+			<Option target="Esercitazione4"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Esercitazione4/main.cpp">
 			<Option target="Esercitazione4"/>
 		</Unit>
