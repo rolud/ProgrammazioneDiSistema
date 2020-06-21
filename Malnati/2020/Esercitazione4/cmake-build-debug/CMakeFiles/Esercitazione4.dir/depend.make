@@ -4,6 +4,7 @@
 CMakeFiles/Esercitazione4.dir/main.cpp.obj: ../DurationLogger.h
 CMakeFiles/Esercitazione4.dir/main.cpp.obj: ../Jobs.h
 CMakeFiles/Esercitazione4.dir/main.cpp.obj: ../Line.h
+CMakeFiles/Esercitazione4.dir/main.cpp.obj: ../Result.h
 CMakeFiles/Esercitazione4.dir/main.cpp.obj: ../functions.h
 CMakeFiles/Esercitazione4.dir/main.cpp.obj: ../main.cpp
 

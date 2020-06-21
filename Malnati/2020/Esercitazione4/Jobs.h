@@ -5,6 +5,7 @@
 #ifndef UNTITLED_JOBS_H
 #define UNTITLED_JOBS_H
 
+#include <atomic>
 #include <condition_variable>
 #include <mutex>
 #include <queue>
@@ -37,7 +38,9 @@ public:
      */
     std::optional<T> get() {
         std::unique_lock<std::mutex> lock(this->m_mtx);
-        this->m_cv_get.wait(lock, [&](){ return this->m_jobs.size() > 0 || (this->m_jobs.size() == 0 && this->m_end); });
+        this->m_cv_get.wait(lock, [&](){
+            return this->m_jobs.size() > 0 || (this->m_jobs.size() == 0 && this->m_end);
+        });
         if (m_jobs.size() == 0 && this->m_end) return {};
         T t = m_jobs.front();
         m_jobs.pop();
@@ -47,6 +50,7 @@ public:
 
     void end() {
         this->m_end = true;
+        m_cv_get.notify_all();
     }
 
 
@@ -54,6 +58,6 @@ private:
     std::queue<T> m_jobs;
     std::mutex m_mtx;
     std::condition_variable m_cv_get, m_cv_put;
-    bool m_end;
+    std::atomic<bool> m_end;
 };
 #endif //UNTITLED_JOBS_H

@@ -5,23 +5,21 @@
 #ifndef ESERCITAZIONE4_RESULT_H
 #define ESERCITAZIONE4_RESULT_H
 
-#include <regex>
-#include <thread>
-#include "Line.h"
+#include <string>
 
+template <class T>
 class Result {
 public:
-    Result(std::thread::id thread_id, Line line, std::vector<std::smatch> matches)
-        : m_thread_id(thread_id), m_line(line), m_matches(matches) {}
+    Result()= default;
+    explicit Result(std::string key): m_key(std::move(key)) {}
+    Result(std::string key, T value): m_key(std::move(key)), m_value(value) {}
 
-    std::thread::id getThreadId() const { return m_thread_id; }
-    Line getLine() const { return m_line; }
-    std::vector<std::smatch> getMatches() const { return m_matches; }
+    std::string getKey() const { return  this->m_key; }
+    T getValue() const { return this->m_value; }
 
 private:
-    std::thread::id m_thread_id;
-    Line m_line;
-    std::vector<std::smatch> m_matches;
+    std::string m_key;
+    T m_value;
 };
 
 #endif //ESERCITAZIONE4_RESULT_H
