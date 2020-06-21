@@ -14,11 +14,11 @@ int main() {
     es4_12(path, rgx);
     es4_3(path, rgx);
 
-//    std::string access_log("..\\files\\mapreduce\\access_log_simple.txt");
-    std::string access_log("..\\files\\mapreduce\\localhost_access_log.2020.txt");
-    std::string mapreduce_log_file(access_log);
+//    std::string access_log_file("..\\files\\mapreduce\\access_log_simple.txt");
+    std::string access_log_file("..\\files\\mapreduce\\localhost_access_log.2020.txt");
+    mapreduce(access_log_file);
 
-    mapreduce(mapreduce_log_file);
+    test_producer_consumer();
 
     return 0;
 }

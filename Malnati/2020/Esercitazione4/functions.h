@@ -5,8 +5,6 @@
 #ifndef ESERCITAZIONE4_FUNCTIONS_H
 #define ESERCITAZIONE4_FUNCTIONS_H
 
-#endif //ESERCITAZIONE4_FUNCTIONS_H
-
 #include <thread>
 #include <experimental/filesystem>
 #include "DurationLogger.h"
@@ -16,6 +14,8 @@
 
 #define N_PRODUCERS 5
 #define N_CONSUMERS 4
+
+#define COUNTER_MAX 10000
 
 void es4_12(const std::string &path, const std::regex &rgx) {
 
@@ -219,5 +219,57 @@ void mapreduce(const std::string &filename) {
                   << " | " << acc.second.getValue()
                   << " matches" << std::endl;
     });
+}
+
+void test_producer_consumer() {
+
+    DurationLogger dl("test producer consumer");
+
+    std::atomic<int> counter = 0;
+    std::mutex counter_mtx;
+    Jobs<int> jobs{};
+    std::vector<std::thread> producers;
+    std::vector<std::thread> consumers;
+    std::vector<int> results(COUNTER_MAX);
+
+    for (int i = 0; i < N_PRODUCERS; i++) {
+        producers.emplace_back([&counter, &jobs, &counter_mtx](){
+            int counter_value;
+            while ((counter_value = counter.fetch_add(1)) < COUNTER_MAX) {
+                jobs.put(counter_value);
+            }
+        });
+    }
+
+    for (int i = 0; i < N_CONSUMERS; i++) {
+        consumers.emplace_back([&jobs, &results](){
+            std::optional<int> job;
+            while ((job = jobs.get()) != std::nullopt) {
+                results[job.value()] += 1;
+            }
+        });
+    }
+
+    for (std::thread& t : producers) t.join();
+    jobs.end();
+    for (std::thread& t : consumers) t.join();
+
+    // test results value
+    // each element in results vector should be 1
+    bool results_ok = true;
+    for (int r : results) {
+        if (r != 1) {
+            results_ok = false;
+            break;
+        }
+    }
+    if (results_ok) {
+        std::cout << " ===> TEST PRODUCER-CONSUMER: PASSED <=== " << std::endl;
+    } else {
+        std::cout << " ===> TEST PRODUCER-CONSUMER: FAILED <=== " << std::endl;
+    }
+
 
 }
+
+#endif //ESERCITAZIONE4_FUNCTIONS_H
