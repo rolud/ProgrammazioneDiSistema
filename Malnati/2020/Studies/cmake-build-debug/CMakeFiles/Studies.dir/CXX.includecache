@@ -13,6 +13,12 @@ iostream
 -
 memory
 -
+unistd.h
+-
+winsock2.h
+-
+ws2tcpip.h
+-
 Buffer.h
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/Buffer.h
 patternCRTP/Amount.h
@@ -23,6 +29,10 @@ patternCRTP/Variable.h
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Variable.h
 smartPointer/DoublyLinkedList.h
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoublyLinkedList.h
+socket/ServerSocket.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/ServerSocket.h
+socket/WinSockSingletonHelper.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/WinSockSingletonHelper.h
 
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/patternCRTP/Amount.h
 
@@ -42,5 +52,35 @@ D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoubnlyLinkedNo
 
 D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/DoubnlyLinkedNode.h
 memory
+-
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/ServerSocket.h
+winsock2.h
+-
+Socket.h
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/Socket.h
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/Socket.h
+iostream
+-
+unistd.h
+-
+stdexcept
+-
+winsock2.h
+-
+
+D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/WinSockSingletonHelper.h
+windows.h
+-
+winsock2.h
+-
+ws2tcpip.h
+-
+bits/exception.h
+-
+sstream
+-
+stdexcept
 -
 

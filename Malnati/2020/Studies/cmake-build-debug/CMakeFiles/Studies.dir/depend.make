@@ -14,4 +14,7 @@ CMakeFiles/Studies.dir/main.cpp.obj: ../patternCRTP/Constant42.h
 CMakeFiles/Studies.dir/main.cpp.obj: ../patternCRTP/Variable.h
 CMakeFiles/Studies.dir/main.cpp.obj: ../smartPointer/DoublyLinkedList.h
 CMakeFiles/Studies.dir/main.cpp.obj: ../smartPointer/DoubnlyLinkedNode.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../socket/ServerSocket.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../socket/Socket.h
+CMakeFiles/Studies.dir/main.cpp.obj: ../socket/WinSockSingletonHelper.h
 

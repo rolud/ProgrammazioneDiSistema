@@ -113,6 +113,15 @@
 		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/smartPointer/smart_ptr.h">
 			<Option target="Studies"/>
 		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/ServerSocket.h">
+			<Option target="Studies"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/Socket.h">
+			<Option target="Studies"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/socket/WinSockSingletonHelper.h">
+			<Option target="Studies"/>
+		</Unit>
 		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Studies/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
