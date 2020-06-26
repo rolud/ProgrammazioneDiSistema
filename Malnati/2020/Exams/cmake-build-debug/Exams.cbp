@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Exams"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exams">
+				<Option output="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Exams.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exams"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Exams/fast">
+				<Option output="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Exams.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include/c++/backward"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/include-fixed"/>
+					<Add directory="D:/Qt/Tools/mingw730_64/bin/../lib/gcc/x86_64-w64-mingw32/7.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 Exams/fast"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/Qt/Tools/mingw730_64/bin/mingw32-make.exe -f &quot;D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/2016/Exchanger.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/2019/Context.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/2019/Executor.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/DurationLogger.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/functions.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/main.cpp">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/nodate/Dispatcher.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/nodate/GameStanding.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/nodate/Phaser.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/tests.h">
+			<Option target="Exams"/>
+		</Unit>
+		<Unit filename="D:/Workspace/CLionProjects/pds/Malnati/2020/Exams/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
