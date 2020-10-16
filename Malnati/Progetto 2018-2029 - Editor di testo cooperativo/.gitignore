@@ -1,0 +1,8 @@
+# Ignore all .pro.user files
+*.pro.user
+
+# Ignore all folders beginning with build- ???
+build-*/
+
+# Ignore db files
+*.db

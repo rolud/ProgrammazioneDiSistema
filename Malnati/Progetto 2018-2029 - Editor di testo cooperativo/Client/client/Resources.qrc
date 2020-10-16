@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>icons/Highlight.bmp</file>
+        <file>icons/New.bmp</file>
+        <file>icons/Open.bmp</file>
+        <file>icons/Paste.bmp</file>
+        <file>icons/Save.bmp</file>
+        <file>icons/Sticky.bmp</file>
+        <file>icons/Copy.bmp</file>
+        <file>icons/Cut.bmp</file>
+        <file>icons/DeleteSticky.bmp</file>
+        <file>icons/twotone_folder_open_black_18dp.png</file>
+        <file>icons/twotone_format_bold_black_18dp.png</file>
+        <file>icons/twotone_format_italic_black_18dp.png</file>
+        <file>icons/twotone_format_underlined_black_18dp.png</file>
+        <file>icons/twotone_redo_black_18dp.png</file>
+        <file>icons/twotone_save_black_18dp.png</file>
+        <file>icons/twotone_undo_black_18dp.png</file>
+        <file>icons/education_icons_IF-16-512.png</file>
+        <file>icons/favicon.ico</file>
+        <file>icons/icons8-undo-30.png</file>
+        <file>icons/Turtle.png</file>
+        <file>icons/twotone_assignment_black_18dp.png</file>
+        <file>icons/twotone_face_black_18dp.png</file>
+        <file>icons/twotone_fiber_new_black_18dp.png</file>
+        <file>icons/twotone_file_copy_black_18dp.png</file>
+        <file>icons/twotone_format_clear_black_18dp.png</file>
+        <file>icons/twotone_invert_colors_black_18dp.png</file>
+        <file>icons/twotone_person_black_18dp.png</file>
+        <file>icons/twotone_picture_as_pdf_black_18dp.png</file>
+        <file>icons/twotone_print_black_18dp.png</file>
+    </qresource>
+</RCC>

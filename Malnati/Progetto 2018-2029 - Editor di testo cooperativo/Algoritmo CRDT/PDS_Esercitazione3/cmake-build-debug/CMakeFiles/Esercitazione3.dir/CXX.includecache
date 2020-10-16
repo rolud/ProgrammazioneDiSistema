@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
+Symbol.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h
+
+D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.h
+SharedEditor.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.h
+Message.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
+queue
+-
+map
+-
+
+D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.h
+string
+-
+vector
+-
+Message.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/Message.h
+Symbol.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h
+
+D:/Workspace/CLionProjects/pds/Esercitazione3/Symbol.h
+vector
+-
+string
+-
+
+D:/Workspace/CLionProjects/pds/Esercitazione3/main.cpp
+iostream
+-
+NetworkServer.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/NetworkServer.h
+SharedEditor.h
+D:/Workspace/CLionProjects/pds/Esercitazione3/SharedEditor.h
+

@@ -1,0 +1,11 @@
+release/editor.o
+release/algorithmcrdt.o
+release/charactermessage.o
+release/message.o
+release/symbol.o
+release/usermessage.o
+release/client.o
+release/main.o
+release/qrc_Resources.o
+release/moc_client.o
+release/moc_editor.o

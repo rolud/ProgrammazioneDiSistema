@@ -1,0 +1,76 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>user icons/Eve.png</file>
+        <file>user icons/Navy.png</file>
+        <file>user icons/Robot.png</file>
+        <file>user icons/Basket.png</file>
+        <file>user icons/Summer.png</file>
+        <file>user icons/Research.png</file>
+        <file>user icons/Prize.png</file>
+        <file>user icons/Engineer.png</file>
+        <file>user icons/Football.png</file>
+        <file>user icons/Videogame.png</file>
+        <file>user icons/Love.png</file>
+        <file>user icons/Motorsport.png</file>
+        <file>user icons/Harley.png</file>
+        <file>user icons/Nature.png</file>
+        <file>user icons/Music.png</file>
+        <file>user icons/Soccer.png</file>
+        <file>user icons/Star.png</file>
+        <file>user icons/Tennis.png</file>
+        <file>user icons/Trip.png</file>
+        <file>user icons/Yoga.png</file>
+        <file>icons/account.png</file>
+        <file>icons/bold.png</file>
+        <file>icons/centered.png</file>
+        <file>icons/copy.png</file>
+        <file>icons/face.png</file>
+        <file>icons/italic.png</file>
+        <file>icons/justify.png</file>
+        <file>icons/left.png</file>
+        <file>icons/lock.png</file>
+        <file>icons/new.png</file>
+        <file>icons/open.png</file>
+        <file>icons/paste.png</file>
+        <file>icons/pdf.png</file>
+        <file>icons/redo.png</file>
+        <file>icons/right.png</file>
+        <file>icons/underlined.png</file>
+        <file>icons/undo.png</file>
+        <file>icons/user.png</file>
+        <file>icons/cut.png</file>
+        <file>icons/save.png</file>
+        <file>icons/document_black.png</file>
+        <file>icons/document_white.png</file>
+        <file>icons/share.png</file>
+        <file>icons/logout.png</file>
+        <file>icons/highlight_colors.png</file>
+    </qresource>
+    <qresource prefix="/cursors">
+        <file>cursors/0.png</file>
+        <file>cursors/1.png</file>
+        <file>cursors/2.png</file>
+        <file>cursors/4.png</file>
+        <file>cursors/5.png</file>
+        <file>cursors/6.png</file>
+        <file>cursors/7.png</file>
+        <file>cursors/8.png</file>
+        <file>cursors/9.png</file>
+        <file>cursors/10.png</file>
+        <file>cursors/11.png</file>
+        <file>cursors/12.png</file>
+        <file>cursors/13.png</file>
+        <file>cursors/14.png</file>
+        <file>cursors/15.png</file>
+        <file>cursors/16.png</file>
+        <file>cursors/17.png</file>
+        <file>cursors/18.png</file>
+        <file>cursors/19.png</file>
+        <file>cursors/20.png</file>
+        <file>cursors/21.png</file>
+        <file>cursors/22.png</file>
+        <file>cursors/23.png</file>
+        <file>cursors/24.png</file>
+        <file>cursors/default.png</file>
+    </qresource>
+</RCC>

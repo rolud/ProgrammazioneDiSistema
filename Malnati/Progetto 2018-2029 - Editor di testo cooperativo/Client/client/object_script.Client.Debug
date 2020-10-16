@@ -1,0 +1,11 @@
+debug/editor.o
+debug/algorithmcrdt.o
+debug/charactermessage.o
+debug/message.o
+debug/symbol.o
+debug/usermessage.o
+debug/client.o
+debug/main.o
+debug/qrc_Resources.o
+debug/moc_client.o
+debug/moc_editor.o
