@@ -1,0 +1,42 @@
+#include <types.h>
+#include <syscall.h>
+#include <lib.h>
+#include <proc.h>
+#include <thread.h>
+#include <addrspace.h>
+#include "opt-waitpid.h"
+#if OPT_WAITPID
+#include <current.h>
+#include <synch.h>
+#endif
+
+void sys__exit(int status) {
+  (void) status;  /* todo handle status */
+
+#if OPT_WAITPID
+  struct proc *proc = curproc;
+  struct thread *cur = curthread;
+
+  lock_acquire(proc->p_lk);
+
+  /* save proc status */
+  proc->p_status = status;
+  /* detach thread from process */
+  proc_remthread(cur);
+  KASSERT(cur->t_proc == NULL);
+  /* signal exit */
+  cv_signal(proc->p_cv, proc->p_lk);
+
+  lock_release(proc->p_lk);
+#else 
+  /* get as of current process */
+  struct addrspace *as = proc_getas(); 
+  /* destroy as */
+  as_destroy(as);
+#endif
+
+  /* thread exits */
+  thread_exit();
+
+  panic("thread_exit returned (should not happen)\n");
+}
